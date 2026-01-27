@@ -2,97 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Harsh Sharma | Urban Economics & Transportation Research</title>
+  <title>Harsh Sharma | Urban Economics & Transportation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: "Georgia", "Times New Roman", serif;
-      background-color: #0f2f3a;
-      color: #ffffff;
-      line-height: 1.7;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #222222;
+      line-height: 1.65;
     }
 
-    .topbar {
-      background-color: #0b2530;
-      padding: 18px 40px;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #f2c94c;
-    }
-
-    .main {
-      max-width: 1100px;
+    .container {
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 50px 40px;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 50px;
+      padding: 50px 30px;
     }
 
-    /* LEFT COLUMN */
-    .profile {
-      text-align: center;
+    .header {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 40px;
     }
 
     .profile img {
       width: 200px;
       height: 200px;
-      border-radius: 50%;
+      border-radius: 6px;
       object-fit: cover;
-      border: 4px solid #ffffff;
-      margin-bottom: 20px;
+      border: 1px solid #dddddd;
     }
 
-    .profile h2 {
-      margin: 10px 0 5px 0;
-      font-size: 1.5rem;
+    .name h1 {
+      margin: 0;
+      font-size: 2.1rem;
       font-weight: 600;
     }
 
-    .profile p {
-      margin: 4px 0;
+    .name p {
+      margin: 6px 0;
       font-size: 1rem;
-      opacity: 0.9;
+      color: #555555;
     }
 
-    .profile a {
-      color: #f2c94c;
+    .links a {
+      margin-right: 15px;
+      font-weight: 500;
+      color: #1a4f8b;
       text-decoration: none;
-      font-weight: 600;
     }
 
-    .profile a:hover {
+    .links a:hover {
       text-decoration: underline;
     }
 
-    /* RIGHT COLUMN */
-    .content p {
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .content a {
-      color: #f2c94c;
-      text-decoration: none;
+    h2 {
+      margin-top: 40px;
+      font-size: 1.4rem;
       font-weight: 600;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 6px;
     }
 
-    .content a:hover {
-      text-decoration: underline;
+    p {
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
     }
 
     footer {
-      text-align: center;
-      padding: 25px;
+      margin-top: 60px;
       font-size: 0.9rem;
-      color: #cccccc;
-      opacity: 0.7;
+      color: #888888;
     }
 
-    @media (max-width: 800px) {
-      .main {
+    @media (max-width: 700px) {
+      .header {
         grid-template-columns: 1fr;
         text-align: center;
       }
@@ -101,61 +96,84 @@
 </head>
 <body>
 
-  <div class="topbar">
-    Harsh Sharma
-  </div>
+  <div class="container">
 
-  <div class="main">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="profile">
+        <img src="images/profile.jpg" alt="Harsh Sharma">
+      </div>
 
-    <!-- LEFT: PROFILE -->
-    <div class="profile">
-      <img src="images/profile.jpg" alt="Harsh Sharma">
-      <h2>Harsh Sharma</h2>
-      <p>Research Fellow</p>
-      <p>Indian Institute of Technology Roorkee</p>
-      <p>NPTEL Pre-Doctoral Fellowship</p>
+      <div class="name">
+        <h1>Harsh Sharma</h1>
+        <p>Research Fellow, Indian Institute of Technology Roorkee</p>
+        <p>NPTEL Pre-Doctoral Fellowship</p>
+        <p>Urban Economics · Urban Planning · Transportation Systems</p>
 
-      <p style="margin-top:15px;">
-        <a href="Harsh_Sharma_CV.pdf" target="_blank">Curriculum Vitae (PDF)</a>
-      </p>
-
-      <p style="margin-top:10px;">
-        <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">LinkedIn</a>
-      </p>
+        <div class="links">
+          <a href="Harsh_Sharma_CV.pdf" target="_blank">CV</a>
+          <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">LinkedIn</a>
+        </div>
+      </div>
     </div>
 
-    <!-- RIGHT: MAIN TEXT -->
-    <div class="content">
-      <p>
-        I am a Research Fellow at the Indian Institute of Technology (IIT) Roorkee under the NPTEL Pre-Doctoral Fellowship.
-        My research focuses on urban economics, urban planning, and transportation systems, with an emphasis on empirical
-        analysis of urban form, mobility, and infrastructure impacts in rapidly urbanizing contexts.
-      </p>
+    <!-- ABOUT -->
+    <h2>About</h2>
+    <p>
+      I am a Research Fellow at the Indian Institute of Technology (IIT) Roorkee under the NPTEL Pre-Doctoral Fellowship.
+      My research focuses on urban economics, urban planning, and transportation systems, with an emphasis on empirical
+      analysis of urban form, mobility, and infrastructure impacts in rapidly urbanizing contexts.
+    </p>
 
-      <p>
-        My work aims to contribute to evidence-based urban and transport policy, particularly in emerging economies.
-      </p>
+    <p>
+      My work aims to contribute to evidence-based urban and transport policy, particularly in emerging economies.
+    </p>
 
-      <p>
-        My research interests lie in urban transportation systems and urban economics, with a focus on housing and
-        transport affordability, land use and urban form, and sustainable urban mobility.
-      </p>
+    <!-- RESEARCH INTERESTS -->
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Urban Transportation Systems</li>
+      <li>Urban Economics</li>
+      <li>Land Use and Urban Form</li>
+      <li>Housing and Transport Affordability</li>
+      <li>Sustainable Urban Mobility</li>
+      <li>Transport Policy and Project Evaluation</li>
+    </ul>
 
-      <p>
-        I use applied econometric and spatial analysis methods, combining statistical analysis in R with GIS-based
-        spatial analysis using ArcGIS and QGIS.
-      </p>
+    <!-- METHODS -->
+    <h2>Methods & Tools</h2>
+    <ul>
+      <li>Statistical & Data Analysis: R</li>
+      <li>GIS & Spatial Analysis: ArcGIS, QGIS</li>
+      <li>Applied Econometrics and Spatial Analysis</li>
+      <li>Policy Analysis and Project Evaluation</li>
+    </ul>
 
-      <p>
-        You can download my CV <a href="Harsh_Sharma_CV.pdf" target="_blank">here</a>.
-      </p>
-    </div>
+    <!-- PUBLICATIONS -->
+    <h2>Publications & Academic Activity</h2>
+    <ul>
+      <li>
+        <em>Evolving Urban Form and Its Impact on Housing and Transportation Costs: A Case Study of Hyderabad</em>, 
+        International Journal of Advance and Applied Research (forthcoming)
+      </li>
+      <li>
+        Paper presented at ICSSR-sponsored National Seminar, Navi Mumbai, India
+      </li>
+    </ul>
+
+    <!-- CURRENT -->
+    <h2>Current Research</h2>
+    <ul>
+      <li>Financial and economic evaluation of Bus Rapid Transit Systems (BRTS) in India</li>
+      <li>Cost–benefit analysis and policy appraisal of urban transport investments</li>
+      <li>Urban form, accessibility, and affordability analysis</li>
+    </ul>
+
+    <footer>
+      © 2026 Harsh Sharma
+    </footer>
 
   </div>
-
-  <footer>
-    © 2026 Harsh Sharma
-  </footer>
 
 </body>
 </html>
