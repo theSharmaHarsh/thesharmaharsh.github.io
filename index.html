@@ -9,84 +9,77 @@
     body {
       margin: 0;
       font-family: "Georgia", "Times New Roman", serif;
-      background-color: #f4f6f8;
-      color: #222;
-      line-height: 1.65;
+      background-color: #0f2f3a;
+      color: #ffffff;
+      line-height: 1.7;
     }
 
-    .header {
-      background-image:
-        linear-gradient(rgba(20, 35, 60, 0.75), rgba(20, 35, 60, 0.75)),
-        url("send-send-v0-ws3z56lubwfg1 (1).jpg");
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 90px 20px 70px 20px;
+    .topbar {
+      background-color: #0b2530;
+      padding: 18px 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #f2c94c;
+    }
+
+    .main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 40px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 50px;
+    }
+
+    /* LEFT COLUMN */
+    .profile {
       text-align: center;
     }
 
-    .header h1 {
-      margin: 0;
-      font-size: 2.6rem;
-      font-weight: 500;
-      letter-spacing: 0.5px;
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      margin-bottom: 20px;
     }
 
-    .header p {
-      margin-top: 12px;
-      font-size: 1.15rem;
-      opacity: 0.95;
-    }
-
-    .cv-button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 10px 22px;
-      background-color: #cfd8e3;
-      color: #14233c;
-      text-decoration: none;
+    .profile h2 {
+      margin: 10px 0 5px 0;
+      font-size: 1.5rem;
       font-weight: 600;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
     }
 
-    .cv-button:hover {
-      background-color: #b8c5d6;
+    .profile p {
+      margin: 4px 0;
+      font-size: 1rem;
+      opacity: 0.9;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 45px;
-      border-radius: 6px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    }
-
-    h2 {
-      border-bottom: 1px solid #d9dde3;
-      padding-bottom: 6px;
-      margin-top: 45px;
-      color: #14233c;
-      font-weight: 600;
-      font-size: 1.35rem;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    .contact a {
-      color: #14233c;
+    .profile a {
+      color: #f2c94c;
       text-decoration: none;
       font-weight: 600;
     }
 
-    .contact a:hover {
+    .profile a:hover {
+      text-decoration: underline;
+    }
+
+    /* RIGHT COLUMN */
+    .content p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .content a {
+      color: #f2c94c;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .content a:hover {
       text-decoration: underline;
     }
 
@@ -94,71 +87,69 @@
       text-align: center;
       padding: 25px;
       font-size: 0.9rem;
-      color: #666;
+      color: #cccccc;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 800px) {
+      .main {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>Harsh Sharma</h1>
-    <p>Urban Economics · Urban Planning · Transportation Systems</p>
-    <p>Research Fellow, Indian Institute of Technology Roorkee</p>
-    <a class="cv-button" href="Harsh_Sharma_CV.pdf" target="_blank">Download CV</a>
+  <div class="topbar">
+    Harsh Sharma
   </div>
 
-  <div class="container">
+  <div class="main">
 
-    <h2>About</h2>
-    <p>
-      I am a Research Fellow at the Indian Institute of Technology (IIT) Roorkee under the NPTEL Pre-Doctoral Fellowship.
-      My research focuses on urban economics, urban planning, and transportation systems, with an emphasis on empirical
-      analysis of urban form, mobility, and infrastructure impacts in rapidly urbanizing contexts.
-    </p>
-    <p>
-      My work aims to contribute to evidence-based urban and transport policy, particularly in emerging economies.
-    </p>
+    <!-- LEFT: PROFILE -->
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Harsh Sharma">
+      <h2>Harsh Sharma</h2>
+      <p>Research Fellow</p>
+      <p>Indian Institute of Technology Roorkee</p>
+      <p>NPTEL Pre-Doctoral Fellowship</p>
 
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Urban Transportation Systems</li>
-      <li>Urban Economics</li>
-      <li>Land Use and Urban Form</li>
-      <li>Housing and Transport Affordability</li>
-      <li>Sustainable Urban Mobility</li>
-      <li>Transport Policy and Project Evaluation</li>
-    </ul>
+      <p style="margin-top:15px;">
+        <a href="Harsh_Sharma_CV.pdf" target="_blank">Curriculum Vitae (PDF)</a>
+      </p>
 
-    <h2>Methods & Tools</h2>
-    <ul>
-      <li>Statistical & Data Analysis: R</li>
-      <li>GIS & Spatial Analysis: ArcGIS, QGIS</li>
-      <li>Applied Econometrics and Spatial Analysis</li>
-      <li>Policy Analysis and Project Evaluation</li>
-    </ul>
+      <p style="margin-top:10px;">
+        <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">LinkedIn</a>
+      </p>
+    </div>
 
-    <h2>Publications & Academic Activity</h2>
-    <ul>
-      <li>
-        <em>Evolving Urban Form and Its Impact on Housing and Transportation Costs: A Case Study of Hyderabad</em><br>
-        International Journal of Advance and Applied Research (forthcoming)
-      </li>
-      <li>
-        Paper presented at ICSSR-sponsored National Seminar, Navi Mumbai, India
-      </li>
-    </ul>
+    <!-- RIGHT: MAIN TEXT -->
+    <div class="content">
+      <p>
+        I am a Research Fellow at the Indian Institute of Technology (IIT) Roorkee under the NPTEL Pre-Doctoral Fellowship.
+        My research focuses on urban economics, urban planning, and transportation systems, with an emphasis on empirical
+        analysis of urban form, mobility, and infrastructure impacts in rapidly urbanizing contexts.
+      </p>
 
-    <h2>Current Research</h2>
-    <ul>
-      <li>Financial and economic evaluation of Bus Rapid Transit Systems (BRTS) in India</li>
-      <li>Cost–benefit analysis and policy appraisal of urban transport investments</li>
-      <li>Urban form, accessibility, and affordability analysis</li>
-    </ul>
+      <p>
+        My work aims to contribute to evidence-based urban and transport policy, particularly in emerging economies.
+      </p>
 
-    <h2>Contact</h2>
-    <p class="contact">
-      LinkedIn: <a href="YOUR_LINKEDIN_URL_HERE" target="_blank">View Profile</a>
-    </p>
+      <p>
+        My research interests lie in urban transportation systems and urban economics, with a focus on housing and
+        transport affordability, land use and urban form, and sustainable urban mobility.
+      </p>
+
+      <p>
+        I use applied econometric and spatial analysis methods, combining statistical analysis in R with GIS-based
+        spatial analysis using ArcGIS and QGIS.
+      </p>
+
+      <p>
+        You can download my CV <a href="Harsh_Sharma_CV.pdf" target="_blank">here</a>.
+      </p>
+    </div>
 
   </div>
 
@@ -168,5 +159,3 @@
 
 </body>
 </html>
-
-
