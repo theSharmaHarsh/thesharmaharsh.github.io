@@ -43,26 +43,19 @@
             background-color: #ffffff22;
         }
 
-        /* Main Content */
-        .main-container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
+        /* Main Content - Full Width */
         .profile-section {
             display: flex;
             gap: 40px;
             align-items: flex-start;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin: 0;   /* No container, no centering */
         }
 
         .profile-photo img {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             object-fit: cover;
             border-radius: 10px;
             border: 1px solid #ddd;
@@ -74,8 +67,9 @@
         }
 
         .profile-text p {
-            line-height: 1.6;
-            margin-bottom: 15px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+            max-width: 900px; /* keeps text readable on large screens */
         }
 
         .section-title {
@@ -96,8 +90,12 @@
             }
 
             .profile-photo img {
-                width: 160px;
-                height: 160px;
+                width: 170px;
+                height: 170px;
+            }
+
+            .profile-text p {
+                max-width: 100%;
             }
         }
     </style>
@@ -110,47 +108,40 @@
         <div class="name">Harsh Sharma</div>
 
         <div class="nav-links">
-            <!-- Replace these with your actual links -->
             <a href="cv.pdf" target="_blank">Download CV</a>
-            <a href="https://www.linkedin.com/in/the-sharma-harsh/" target="_blank">LinkedIn</a>
-            <a href="https://medium.com/@theSharmaHarsh" target="_blank">Medium</a>
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@YOUR-MEDIUM" target="_blank">Medium</a>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-container">
+    <!-- Full-width Main Content -->
+    <div class="profile-section">
 
-        <div class="profile-section">
+        <!-- Profile Photo -->
+        <div class="profile-photo">
+            <img src="profile.jpg" alt="Harsh Sharma">
+        </div>
 
-            <!-- Profile Photo -->
-            <div class="profile-photo">
-                <!-- Upload your image to the repo and update filename -->
-                <img src="ProfilePic.png" alt="Harsh Sharma">
-            </div>
+        <!-- Profile Text -->
+        <div class="profile-text">
+            <h2>About Me</h2>
+            <p>
+                I am a Research Fellow at IIT Roorkee with an academic background in economics,
+                urban planning, and transportation systems. My work focuses on applied research
+                in urban transport, housing, and infrastructure finance, with an emphasis on
+                evidence-based policy and quantitative analysis.
+            </p>
 
-            <!-- Profile Text -->
-            <div class="profile-text">
-                <h2>About Me</h2>
-                <p>
-                    I am a Research Fellow at IIT Roorkee with an academic background in economics,
-                    urban planning, and transportation systems. My work focuses on applied research
-                    in urban transport, housing, and infrastructure finance, with an emphasis on
-                    evidence-based policy and quantitative analysis.
-                </p>
-
-                <div class="section-title">Research Interests</div>
-                <p>
-                    My primary research interests include Bus Rapid Transit Systems (BRTS),
-                    urban transportation planning, multimodal mobility, urban form and land use,
-                    infrastructure finance, municipal bonds, cost-benefit analysis, and the
-                    economic evaluation of public transport systems in Indian cities.
-                </p>
-            </div>
-
+            <div class="section-title">Research Interests</div>
+            <p>
+                My primary research interests include Bus Rapid Transit Systems (BRTS),
+                urban transportation planning, multimodal mobility, urban form and land use,
+                infrastructure finance, municipal bonds, cost-benefit analysis, and the
+                economic evaluation of public transport systems in Indian cities.
+            </p>
         </div>
 
     </div>
 
 </body>
 </html>
-
