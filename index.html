@@ -1,182 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Harsh Sharma | Urban Economics & Transportation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Harsh Sharma | Academic Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #ffffff;
-      color: #222222;
-      line-height: 1.65;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 50px 30px;
-    }
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #1f2933;
+            color: white;
+        }
 
-    .header {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 40px;
-      align-items: start;
-      margin-bottom: 40px;
-    }
+        .top-bar .name {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-    .profile img {
-      width: 200px;
-      height: 200px;
-      border-radius: 6px;
-      object-fit: cover;
-      border: 1px solid #dddddd;
-    }
+        .top-bar .nav-links a {
+            margin-left: 15px;
+            padding: 8px 14px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #ffffff55;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
 
-    .name h1 {
-      margin: 0;
-      font-size: 2.1rem;
-      font-weight: 600;
-    }
+        .top-bar .nav-links a:hover {
+            background-color: #ffffff22;
+        }
 
-    .name p {
-      margin: 6px 0;
-      font-size: 1rem;
-      color: #555555;
-    }
+        /* Main Content */
+        .main-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-    .links a {
-      margin-right: 15px;
-      font-weight: 500;
-      color: #1a4f8b;
-      text-decoration: none;
-    }
+        .profile-section {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
 
-    .links a:hover {
-      text-decoration: underline;
-    }
+        .profile-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
 
-    h2 {
-      margin-top: 40px;
-      font-size: 1.4rem;
-      font-weight: 600;
-      border-bottom: 1px solid #e5e5e5;
-      padding-bottom: 6px;
-    }
+        .profile-text h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
 
-    p {
-      margin-bottom: 14px;
-      font-size: 1.02rem;
-    }
+        .profile-text p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-    ul {
-      padding-left: 20px;
-    }
+        .section-title {
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #1f2933;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
 
-    li {
-      margin-bottom: 6px;
-    }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888888;
-    }
-
-    @media (max-width: 700px) {
-      .header {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-    }
-  </style>
+            .profile-photo img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="name">Harsh Sharma</div>
 
-    <!-- HEADER -->
-    <div class="header">
-      <div class="profile">
-        <img src="ProfilePic.png" alt="Harsh Sharma">
-      </div>
-
-      <div class="name">
-        <h1>Harsh Sharma</h1>
-        <p>Research Fellow, Indian Institute of Technology Roorkee</p>
-        <p>Urban Economics · Transportation Systems</p>
-
-        <div class="links">
-          <a href="Harsh_Sharma_CV.pdf" target="_blank">CV</a>
-          <a href="https://www.linkedin.com/in/the-sharma-harsh/" target="_blank">LinkedIn</a>
-          <a href="https://medium.com/@theSharmaHarsh" target="_blank">Medium</a>
+        <div class="nav-links">
+            <!-- Replace these with your actual links -->
+            <a href="cv.pdf" target="_blank">Download CV</a>
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@theSharmaHarsh" target="_blank">Medium</a>
         </div>
-      </div>
     </div>
 
-    <!-- ABOUT -->
-    <h2>About</h2>
-    <p>
-      I am a Research Fellow at the Indian Institute of Technology (IIT) Roorkee under the NPTEL Pre-Doctoral Fellowship.
-      My research focuses on urban economics, urban planning, and transportation systems, with an emphasis on empirical
-      analysis of urban form, mobility, and infrastructure impacts in rapidly urbanizing contexts.
-    </p>
+    <!-- Main Content -->
+    <div class="main-container">
 
-    <p>
-      My work aims to contribute to evidence-based urban and transport policy, particularly in emerging economies.
-    </p>
+        <div class="profile-section">
 
-    <!-- RESEARCH INTERESTS -->
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Urban Transportation Systems</li>
-      <li>Urban Economics</li>
-      <li>Land Use and Urban Form</li>
-      <li>Housing and Transport Affordability</li>
-      <li>Sustainable Urban Mobility</li>
-      <li>Transport Policy and Project Evaluation</li>
-    </ul>
+            <!-- Profile Photo -->
+            <div class="profile-photo">
+                <!-- Upload your image to the repo and update filename -->
+                <img src="profile.jpg" alt="Harsh Sharma">
+            </div>
 
-    <!-- METHODS -->
-    <h2>Methods & Tools</h2>
-    <ul>
-      <li>Statistical & Data Analysis: R</li>
-      <li>GIS & Spatial Analysis: ArcGIS, QGIS</li>
-      <li>Applied Econometrics and Spatial Analysis</li>
-      <li>Policy Analysis and Project Evaluation</li>
-    </ul>
+            <!-- Profile Text -->
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a Research Fellow at IIT Roorkee with an academic background in economics,
+                    urban planning, and transportation systems. My work focuses on applied research
+                    in urban transport, housing, and infrastructure finance, with an emphasis on
+                    evidence-based policy and quantitative analysis.
+                </p>
 
-    <!-- PUBLICATIONS -->
-    <h2>Publications & Academic Activity</h2>
-    <ul>
-      <li>
-        <em>Evolving Urban Form and Its Impact on Housing and Transportation Costs: A Case Study of Hyderabad</em>, 
-        International Journal of Advance and Applied Research (forthcoming)
-      </li>
-      <li>
-        Paper presented at ICSSR-sponsored National Seminar, Navi Mumbai, India
-      </li>
-    </ul>
+                <div class="section-title">Research Interests</div>
+                <p>
+                    My primary research interests include Bus Rapid Transit Systems (BRTS),
+                    urban transportation planning, multimodal mobility, urban form and land use,
+                    infrastructure finance, municipal bonds, cost-benefit analysis, and the
+                    economic evaluation of public transport systems in Indian cities.
+                </p>
+            </div>
 
-    <!-- CURRENT -->
-    <h2>Current Research</h2>
-    <ul>
-      <li>Financial and economic evaluation of Bus Rapid Transit Systems (BRTS) in India</li>
-      <li>Cost–benefit analysis and policy appraisal of urban transport investments</li>
-      <li>Urban form, accessibility, and affordability analysis</li>
-    </ul>
+        </div>
 
-    <footer>
-      © 2026 Harsh Sharma
-    </footer>
-
-  </div>
+    </div>
 
 </body>
 </html>
-
-
-
