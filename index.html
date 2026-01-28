@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Harsh Sharma</title>
+    <title>Harsh Sharma | Academic Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -43,14 +43,20 @@
             background-color: #ffffff22;
         }
 
-        /* Main Content - Full Width */
+        /* Page Padding Wrapper (NOT a container box) */
+        .page-content {
+            padding: 40px 60px;
+        }
+
+        /* Main Content */
         .profile-section {
             display: flex;
             gap: 40px;
             align-items: flex-start;
             background: white;
             padding: 40px;
-            margin: 0;   /* No container, no centering */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         .profile-photo img {
@@ -69,7 +75,7 @@
         .profile-text p {
             line-height: 1.7;
             margin-bottom: 18px;
-            max-width: 900px; /* keeps text readable on large screens */
+            max-width: 950px;
         }
 
         .section-title {
@@ -83,10 +89,15 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .page-content {
+                padding: 25px 20px;
+            }
+
             .profile-section {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                padding: 25px;
             }
 
             .profile-photo img {
@@ -114,31 +125,35 @@
         </div>
     </div>
 
-    <!-- Full-width Main Content -->
-    <div class="profile-section">
+    <!-- Natural Page Margins (not a centered container) -->
+    <div class="page-content">
 
-        <!-- Profile Photo -->
-        <div class="profile-photo">
-            <img src="profile.jpg" alt="Harsh Sharma">
-        </div>
+        <div class="profile-section">
 
-        <!-- Profile Text -->
-        <div class="profile-text">
-            <h2>About Me</h2>
-            <p>
-                I am a Research Fellow at IIT Roorkee with an academic background in economics,
-                urban planning, and transportation systems. My work focuses on applied research
-                in urban transport, housing, and infrastructure finance, with an emphasis on
-                evidence-based policy and quantitative analysis.
-            </p>
+            <!-- Profile Photo -->
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Harsh Sharma">
+            </div>
 
-            <div class="section-title">Research Interests</div>
-            <p>
-                My primary research interests include Bus Rapid Transit Systems (BRTS),
-                urban transportation planning, multimodal mobility, urban form and land use,
-                infrastructure finance, municipal bonds, cost-benefit analysis, and the
-                economic evaluation of public transport systems in Indian cities.
-            </p>
+            <!-- Profile Text -->
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a Research Fellow at IIT Roorkee with an academic background in economics,
+                    urban planning, and transportation systems. My work focuses on applied research
+                    in urban transport, housing, and infrastructure finance, with an emphasis on
+                    evidence-based policy and quantitative analysis.
+                </p>
+
+                <div class="section-title">Research Interests</div>
+                <p>
+                    My primary research interests include Bus Rapid Transit Systems (BRTS),
+                    urban transportation planning, multimodal mobility, urban form and land use,
+                    infrastructure finance, municipal bonds, cost-benefit analysis, and the
+                    economic evaluation of public transport systems in Indian cities.
+                </p>
+            </div>
+
         </div>
 
     </div>
